@@ -95,7 +95,7 @@ void Turtle::dynamicsCallback(const ros::TimerEvent& event)
 
   // integrate the linear and angular acceleration to get current velocity
   // add in the damping effect in the force
-  double linear_acceleration = -linear_damping_*lin_vel_ + force_/mass_ ;
+  double linear_acceleration = (force_ -linear_damping_*lin_vel_)/mass_ ;
   double angular_acceleartion = (torque_ - angular_damping_*ang_vel_)/inertia_;
 
   lin_vel_ += linear_acceleration*dt;
