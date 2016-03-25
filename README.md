@@ -3,8 +3,8 @@ Fork of the ROS tutorials turtlesim package, modified to add dynamics and wind f
 
 # Topics:
 ## Subscriptions
-*cmd_vel - commanded velocity (bypasses internal dynamics and behaves like a normal turtlsim node)
-*cmd_wrench - commanded Forces and Torques (Only x force and z torque do anything)
+* cmd_vel - commanded velocity (bypasses internal dynamics and behaves like a normal turtlsim node)
+* cmd_wrench - commanded Forces and Torques (Only x force and z torque do anything)
 
 ## Publications
 * pose - the 2D pose of the turtle
