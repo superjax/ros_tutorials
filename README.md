@@ -19,8 +19,9 @@ Fork of the ROS tutorials turtlesim package, modified to add dynamics and wind f
 
 Dynamics are calculated at 1000 Hz by the following method (see line 98-99 of turtle.cpp)
 
-linear_acceleration =  (force-linear_damping*lin_vel)/mass
-angular_acceleartion = (torque - angular_damping*ang_vel)/inertia
+`linear_acceleration =  (force-linear_damping*lin_vel)/mass`
+
+`angular_acceleartion = (torque - angular_damping*ang_vel)/inertia`
 
 Wind is applied as a constant force in the component direction
 
